@@ -31,10 +31,15 @@ public class Main {
             System.out.println("Heslo: ");
             String userPasswordEntered
                     = userInputScanner.nextLine();
+            /*
             isLoginOk = user.login(
                     userEmailEntered,
                     userPasswordEntered,
                     user);
+             */
+            isLoginOk = user.login(
+                    userEmailEntered,
+                    userPasswordEntered);
         } while(!isLoginOk);
 
     }

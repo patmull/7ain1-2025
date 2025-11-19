@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6268a02e-8486-4152-b5bb-71795e3da0bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Labs7/OOPRelationships/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labs7/OOPRelationships/src/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labs8/Test/Examples/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labs8/Test/Examples/src/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs6/WhileLoopsExamples/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs6/WhileLoopsExamples/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +28,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "labs__8",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/patri/OneDrive/Dokumenty/OSU/ALG/2025/Labs5/Test",
     "node.js.detected.package.eslint": "true",

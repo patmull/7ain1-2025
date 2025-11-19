@@ -19,6 +19,23 @@ public class User {
     }
 
     public boolean login(String userEmail,
+                         String userPassword) {
+        boolean isLoginOk = false;
+        if (!userEmail.equals(this.getEmail())) {
+            System.out.println("Špatně zadaný e-mail.");
+        } else if (!userPassword
+                .equals(this.getPassword())) {
+            System.out.println("Špatně zadané heslo. " +
+                    "Pokud jste zapomněli heslo," +
+                    "požádejte si o obnovu hesla.");
+        } else {
+            isLoginOk = true;
+            System.out.println("Uživatel úspěšně přihlášen.");
+        }
+        return isLoginOk;
+    }
+
+    public boolean login(String userEmail,
                          String userPassword,
                          User user) {
         boolean isLoginOk = false;
