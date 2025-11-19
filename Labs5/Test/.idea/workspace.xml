@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6268a02e-8486-4152-b5bb-71795e3da0bb" name="Changes" comment="" />
+    <list default="true" id="6268a02e-8486-4152-b5bb-71795e3da0bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Labs7/OOPRelationships/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labs7/OOPRelationships/src/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labs8/Test/Examples/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labs8/Test/Examples/src/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs4/ExamplesFromLabs3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labs6/WhileLoopsExamples/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs6/WhileLoopsExamples/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="34jNn5QVf3bYV84Or3n1rIS6Gqr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -18,8 +35,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/patri/OneDrive/Dokumenty/OSU/ALG/2025/Labs5/Test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
@@ -42,7 +64,11 @@
       <option name="presentableId" value="Default" />
       <updated>1761723184462</updated>
       <workItem from="1761723185573" duration="36000" />
+      <workItem from="1763545695754" duration="474000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
