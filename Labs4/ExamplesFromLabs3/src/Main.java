@@ -15,29 +15,39 @@ public class Main {
         // 2. Zkontroluje se síla hesla (můžete vymyslet různá pravidla). Např. zda je dlouhé
         // 3. Zkontroluje se, zda je e-mail (zhruba) ve správném tvaru.
         // 4. Přihlášení (viz BASIC), ověří se ze zadanými údaji v registraci.
-
-
-        System.out.println("======REGISTRACE=======");
         Scanner userInputScanner = new Scanner(System.in);
-        System.out.println("E-mail: ");
-        String userEmailInDatabase = userInputScanner.nextLine();
-        System.out.println("Heslo: ");
-        String userPasswordInDatabase = userInputScanner.nextLine();
-        if (userPasswordInDatabase.length() < 8) {
-            System.out.println("Heslo je příliš krátké.");
-        } else if (userEmailInDatabase.contains(" ")
-                || userPasswordInDatabase.contains(" ")) {
-            System.out.println("E-mail a heslo nesmí obsahovat mezery.");
-        } else if (!userEmailInDatabase.contains("@")
-                || !userEmailInDatabase.contains(".")) {
-            System.out.println("E-mail má špatný formát.");
-        } else if (userPasswordInDatabase.equals("12345678")) {
-            System.out.println("Toto heslo je příliš slabé.");
-        } else {
-            System.out.println("Uživatel úspěšně zaregistrován.");
-        }
+        System.out.println("======REGISTRACE=======");
+        boolean registrationConditionsMet = false;
+        String userEmail;
+        String userPassword;
+        User user = new User();
+        do {
+            System.out.println("E-mail: ");
+            userEmail = userInputScanner.nextLine();
+            System.out.println("Heslo: ");
+            userPassword = userInputScanner.nextLine();
+
+            registrationConditionsMet = user.register(userEmail, userPassword);
+
+            if (userPassword.length() < 8) {
+                System.out.println("Heslo je příliš krátké.");
+            } else if (userEmail.contains(" ")
+                    || userPassword.contains(" ")) {
+                System.out.println("E-mail a heslo nesmí obsahovat mezery.");
+            } else if (!userEmail.contains("@")
+                    || !userEmail.contains(".")) {
+                System.out.println("E-mail má špatný formát.");
+            } else if (userPassword.equals("12345678")) {
+                System.out.println("Toto heslo je příliš slabé.");
+            } else {
+                registrationConditionsMet = true;
+                System.out.println("Uživatel úspěšně zaregistrován.");
+            }
+        } while(!registrationConditionsMet);
+
         //String userEmailInDatabase = "patrik.muller@osu.cz";
         //String userPasswordInDatabase = "12345678";
+
         System.out.println("======LOGIN=======");
         userInputScanner = new Scanner(System.in);
         System.out.println("E-mail: ");
@@ -45,9 +55,9 @@ public class Main {
         System.out.println("Heslo: ");
         String userPasswordEntered = userInputScanner.nextLine();
 
-        if (!userEmailEntered.equals(userEmailInDatabase)) {
+        if (!userEmailEntered.equals(userEmail)) {
             System.out.println("Špatně zadaný e-mail.");
-        } else if (!userPasswordEntered.equals(userPasswordInDatabase)) {
+        } else if (!userPasswordEntered.equals(userPassword)) {
             System.out.println("Špatně zadané heslo. Pokud jste zapomněli heslo," +
                     "požádejte si o obnovu hesla.");
         } else {

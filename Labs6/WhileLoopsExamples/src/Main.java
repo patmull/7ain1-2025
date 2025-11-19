@@ -1,5 +1,15 @@
 public class Main {
     public static void main(String[] args) {
+        int tulos = 0;
+
+        int i = 0;
+        while (i < 4) {
+            tulos += 3;
+            i++;
+        }
+
+        System.out.println(tulos);
+
         int rabbitCount = 1;
         while(true) {
             System.out.println("Jdu vám takhle po lese, najednou " + rabbitCount
