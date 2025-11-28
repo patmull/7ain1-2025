@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6268a02e-8486-4152-b5bb-71795e3da0bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs8/LoginRegisterOOP/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "labs__8",
+    "git-widget-placeholder": "labs__8__backup",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/patri/OneDrive/Dokumenty/OSU/ALG/2025/Labs5/Test",
     "node.js.detected.package.eslint": "true",
@@ -58,6 +57,7 @@
       <updated>1761723184462</updated>
       <workItem from="1761723185573" duration="36000" />
       <workItem from="1763545695754" duration="474000" />
+      <workItem from="1764146597429" duration="199000" />
     </task>
     <servers />
   </component>
