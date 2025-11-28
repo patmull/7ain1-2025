@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -48,5 +50,21 @@ public class Main {
         // in Java there is very little reasons to do it, because you have garbage collector
         // -- little bit like a wash disher or laundry machine or human immunity
         // not something intelligent, but automated and complex and reliable
+
+        // find the order of the ingredients
+        System.out.println("Search for ingredient:");
+        Scanner scanner = new Scanner(System.in);
+        String searchedIngredient = scanner.nextLine();
+
+        int orderOfItem = -1; // usually done this way
+        for (int i = 0; i < carbonaraIngredients.length; i++) {
+            if (carbonaraIngredients[i].equals(searchedIngredient))
+                orderOfItem = i + 1;
+        }
+
+        System.out.println(searchedIngredient + " is the " + orderOfItem + ". ingredient.");
+
+        listOfNumbers[8] = 5;
+
     }
 }
