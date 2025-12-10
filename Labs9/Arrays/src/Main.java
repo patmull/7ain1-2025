@@ -1,32 +1,99 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        ArrayList<String> ingredientsCarbonara = new ArrayList<>();
-        ingredientsCarbonara.add("bucatini");
-        ingredientsCarbonara.add("guanciale");
-        ingredientsCarbonara.add("garlic");
-        ingredientsCarbonara.add("pecorino");
-        ingredientsCarbonara.add("vejce");
-        ingredientsCarbonara.add("černý pepř");
 
-        for(int i = 0; i < ingredientsCarbonara.size(); i++) {
-            System.out.println(ingredientsCarbonara.get(i));
+    private static String ingredients[] = {"bucatini", "pepper"};
+
+    public static void main(String[] args) {
+        enum CarbonaraRecipe {
+            BUCATINI,
+            GUANCIALE,
+            BLACK_PEPPER
+        }
+
+        for(CarbonaraRecipe ingredient : CarbonaraRecipe.values()) {
+            System.out.println(ingredient);
+        }
+
+        int dayInWeek = 3;
+        switch(dayInWeek) {
+            case 1:
+                System.out.println("Pondělí");
+            case 2:
+                System.out.println("Úterý");
+            case 3:
+                System.out.println("Středa");
+            default:
+                System.out.println("je dnes.");
+        }
+
+        if(dayInWeek == 1) {
+            System.out.println("Pondělí");
+        } else if (dayInWeek == 2) {
+            System.out.println("Úterý");
+        } else if (dayInWeek == 3) {
+            System.out.println("Středa");
+        }
+        System.out.println("je dnes.");
+
+
+
+        ArrayList<String> recipeIngredients = new ArrayList<>();
+        // String[] ingredients = {"bucatini", "guanciale", "garlic"};
+        recipeIngredients.add("bucatini");
+        recipeIngredients.add("guanciale");
+        recipeIngredients.add("garlic");
+        recipeIngredients.add("pecorino");
+        recipeIngredients.add("vejce");
+        recipeIngredients.add("černý pepř");
+
+        System.out.println("Hledaná ingredience:");
+        Scanner scanner = new Scanner(System.in);
+        String searchedIngredientUserInput = scanner.nextLine();
+
+        System.out.println("searchedIngredientUserInput:");
+        System.out.println(searchedIngredientUserInput);
+
+        // 1: jednoduchý způsob pomocí ArrayList a contains
+        /*
+        boolean doesIngredientBelongInRecipe = true;
+        if(!recipeIngredients.contains(searchedIngredientUserInput)) {
+            doesIngredientBelongInRecipe = false;
+        }
+        */
+        // 2: způsob procházení "ručně" pro ArrayList, ale i klasická pole
+        boolean doesIngredientBelongInRecipe = false;
+        for(int i = 0; i < recipeIngredients.size(); i++) {
+            if(recipeIngredients.get(i).equals(searchedIngredientUserInput)) {
+                doesIngredientBelongInRecipe = true;
+                break;
+            }
+        }
+
+        if (doesIngredientBelongInRecipe == true) {
+            System.out.println("Hledaná ingredience patří do receptu.");
+        } else {
+            System.out.println("Hledaná ingredience nepatří do receptu.");
+            System.out.println("Do autentického receptu patří ve skutečnosti: ");
+            for (String ingredient : recipeIngredients) {
+                System.out.println(ingredient);
+            }
         }
 
         System.out.println("Carbonara ingredients:");
-        for(String ingredient : ingredientsCarbonara) {
+        for(String ingredient : recipeIngredients) {
             System.out.println(ingredient);
         }
-        ingredientsCarbonara.remove("garlic");
+        recipeIngredients.remove("garlic");
         System.out.println("Authentic carbonara ingredients:");
-        for(String ingredient : ingredientsCarbonara) {
+        for(String ingredient : recipeIngredients) {
             System.out.println(ingredient);
         }
 
         String searchedIngredient = "garlic";
         System.out.println("Does authentic carbonoara contains " + searchedIngredient + "?");
-        System.out.println(ingredientsCarbonara.contains("garlic"));
+        System.out.println(recipeIngredients.contains("garlic"));
 
         int size = 5;
         int[] measurements2 = new int[size];
